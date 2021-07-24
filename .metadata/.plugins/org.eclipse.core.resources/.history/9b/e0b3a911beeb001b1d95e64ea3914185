@@ -1,0 +1,32 @@
+package org.pom;
+
+import java.util.List;
+
+import org.libgobal.LibGlobalCommon;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class AddactinPomCancelBook extends LibGlobalCommon {
+	public AddactinPomCancelBook() {
+		PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(xpath = "//input[@type='checkbox']")
+	private List<WebElement> clickCancel;
+
+	public List<WebElement> getClickCancel() {
+		return clickCancel;
+	}
+
+	public void cancelBook() {
+		List<WebElement> cancel = getClickCancel();
+		int l = cancel.size();
+		WebElement element = cancel.get(l - 1);
+		click(element);
+
+		alertAccept();
+
+	}
+
+}

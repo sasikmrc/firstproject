@@ -1,0 +1,16 @@
+package org.bookinfo;
+
+public class BookingInfo extends LibGlobalCommon{
+
+	public BookInfo() {
+		
+		
+		
+		
+				
+	}
+	
+}
+	
+
+

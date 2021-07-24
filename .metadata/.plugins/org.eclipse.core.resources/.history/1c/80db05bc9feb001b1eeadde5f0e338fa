@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  	<test thread-count="5" name="Test">
+		<parameter name="userName" value="sasikumarc"></parameter>
+		<parameter name="password" value="sqr403"></parameter>
+		<parameter name="location" value="Sydney"></parameter>
+		<parameter name="hotel" value="Hotel Sunshine"></parameter>
+		<parameter name="type" value="Double"></parameter>
+		<parameter name="roomNo" value="2 - Two"></parameter>
+		<parameter name="firstName" value="SASIKUMAR"></parameter>
+		<parameter name="lastName" value="C"></parameter>
+		<parameter name="address" value="Chennai=-600013"></parameter>
+		<parameter name="ccNum" value="7299012723654320"></parameter>
+		<parameter name="type" value="VISA"></parameter>
+		<parameter name="expMonth" value="March"></parameter>
+		<parameter name="expYear" value="2022"></parameter>
+		<parameter name="cvv" value="234"></parameter>
+		<classes>
+			<class name="org.main.AdactinHotel" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

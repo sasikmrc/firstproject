@@ -1,0 +1,21 @@
+package org.bookinfo;
+
+import org.libgobal.LibGlobalCommon;
+
+public class BookInfo extends LibGlobalCommon{
+
+	public BookInfo() {
+		
+		
+		
+		
+		
+		
+		
+				
+	}
+	
+}
+	
+
+

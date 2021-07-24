@@ -1,0 +1,55 @@
+package org.test;
+
+import java.util.Date;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class FacebookSuits {
+	static WebDriver driver;
+	
+	@BeforeClass
+	public static void beforeclass() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");	
+
+	}
+	
+	@AfterClass
+	public static void afterclass() {
+		Date date = new Date();
+		System.out.println("start time "+date);
+			}
+	
+@Before
+public void before() {
+	Date date = new Date();
+	System.out.println("start time "+date);
+	}
+@After
+public void after() {
+	Date date = new Date();
+	System.out.println("end time "+date);
+	}
+@Test
+public void userName() throws InterruptedException {
+WebElement txtUserName = driver.findElement(By.id("email"));
+txtUserName.sendKeys("sasi.kmrc@gmail.com");
+Thread.sleep(3000);
+}
+@Test
+public void password() {
+	WebElement txtPassword = driver.findElement(By.id("password"));
+txtPassword.sendKeys("SQRsqr403");
+}
+}

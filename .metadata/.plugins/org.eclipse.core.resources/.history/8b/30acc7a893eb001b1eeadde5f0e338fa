@@ -1,0 +1,18 @@
+package org.pom;
+
+import org.libgobal.LibGlobalCommon;
+import org.openqa.selenium.WebDriver;
+
+public class BookingInfo extends LibGlobalCommon{
+
+	public BookingInfo() {
+		getDriver();
+		loadUrl("https://adactinhotelapp.com/");
+		
+		AddactinPomLogin login = new AddactinPomLogin();
+		login.login("sasikmrc", "SQRsqr403");
+	}
+}
+	
+
+

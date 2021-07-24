@@ -1,0 +1,9 @@
+package org.test.day2;
+
+public class BaseDataCall {
+	String name = null;
+	AddactinHotel ah;
+
+	
+
+}

@@ -1,0 +1,15 @@
+package org.pom;
+
+import org.libgobal.LibGlobalCommon;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class AddactinPomCancelBook extends LibGlobalCommon {
+	
+	
+	
+	
+	
+
+	}
+	

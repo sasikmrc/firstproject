@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LibGlobalCommon.java&apos; to &apos;MavenPoM/src/test/java/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;FrameworkSuit&apos;&#x0D;&#x0A;- Destination element: &apos;MavenPoM/src/test/java/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;org.utility.LibGlobalCommon.java&apos;" description="Copy compilation unit" destination="=MavenPoM/src\/test\/java&lt;" element1="/src\/test\/java&lt;org.utility{LibGlobalCommon.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1627014307345" units="1" version="1.0"/>
+</session>

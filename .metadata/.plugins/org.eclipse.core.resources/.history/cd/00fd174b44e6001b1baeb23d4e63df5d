@@ -1,0 +1,18 @@
+package org.test.day2;
+
+import java.io.IOException;
+
+public class BookConfirmation {
+	public static void main(String[] args) throws InterruptedException, IOException {
+		BaseDataCall z = new BaseDataCall();
+		AddactinHotel hotel = new AddactinHotel();
+		hotel.login(z.excelRead(1, 0),z.excelRead(1, 1));
+		hotel.searchHotel(z.excelRead(1, 0),z.excelRead(1, 1),z.excelRead(1, 0));
+		hotel.selectHotel();
+		hotel.bookHotel("Sasikumar", "C", "Chennai", "1234567891011123", "VISA", "March", 4, "1234");
+		String confrim = hotel.bookingConfrim();
+		System.out.println(confrim);
+		
+	}
+
+}

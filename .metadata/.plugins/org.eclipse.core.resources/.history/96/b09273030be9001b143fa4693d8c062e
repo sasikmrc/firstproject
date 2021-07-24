@@ -1,0 +1,11 @@
+package org.tcs.test;
+
+public class CourseDetails {
+
+	private void javaCourse() {
+
+		System.out.println("java course started");
+
+	}
+
+}

@@ -1,0 +1,48 @@
+package org.bookinfo;
+
+
+import org.libgobal.LibGlobalCommon;
+import org.pom.AddactinPomBookConfirm;
+import org.pom.AddactinPomBookHotel;
+import org.pom.AddactinPomCancelBook;
+import org.pom.AddactinPomHotelSearch;
+import org.pom.AddactinPomLogin;
+import org.pom.AddactinPomSelectHotel;
+import org.testng.annotations.Test;
+
+public class BookingInfo extends LibGlobalCommon{
+
+	@Test
+	public BookingInfo() {
+		
+		
+		getDriver();
+		loadUrl("https://adactinhotelapp.com/");
+		
+		AddactinPomLogin login = new AddactinPomLogin();
+		login.login("sasikmrc", "sqr403");
+		
+		AddactinPomHotelSearch hotelSearch = new AddactinPomHotelSearch();
+		hotelSearch.searchHotel("Sydney", "Hotel Sunshine", "Standard", 2);
+		
+		AddactinPomSelectHotel selectHotel = new AddactinPomSelectHotel();
+		selectHotel.selecthotel();
+		
+		AddactinPomBookHotel bookHotel = new AddactinPomBookHotel();
+		bookHotel.bookHotel("SASIKUMAR", "C", "Erode", "1234567890123456", "VISA", "March", "2022", "1234");
+		
+		AddactinPomBookConfirm bookConfirm = new AddactinPomBookConfirm();
+		bookConfirm.bookconfirmation();
+		
+		AddactinPomCancelBook cancelBook = new AddactinPomCancelBook();
+		cancelBook.cancelBook();
+		
+		
+		
+				
+	}
+	
+}
+	
+
+

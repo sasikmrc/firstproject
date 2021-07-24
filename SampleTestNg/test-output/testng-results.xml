@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="179" started-at="2021-07-23T04:41:12Z" finished-at="2021-07-23T04:41:13Z">
+    <groups>
+    </groups>
+    <test name="chromeTest" duration-ms="66" started-at="2021-07-23T04:41:12Z" finished-at="2021-07-23T04:41:12Z">
+      <class name="org.ngtest.NgTestClass2">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:org.ngtest.NgTestClass2@4bec1f0c]" name="test" duration-ms="18" started-at="2021-07-23T10:11:12Z" finished-at="2021-07-23T10:11:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- org.ngtest.NgTestClass2 -->
+    </test> <!-- chromeTest -->
+    <test name="firefoxTest" duration-ms="15" started-at="2021-07-23T04:41:13Z" finished-at="2021-07-23T04:41:13Z">
+      <class name="org.ngtest.NgTestClass2">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:org.ngtest.NgTestClass2@52a86356]" name="test" duration-ms="15" started-at="2021-07-23T10:11:13Z" finished-at="2021-07-23T10:11:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- org.ngtest.NgTestClass2 -->
+    </test> <!-- firefoxTest -->
+    <test name="ieTest" duration-ms="0" started-at="2021-07-23T04:41:13Z" finished-at="2021-07-23T04:41:13Z">
+      <class name="org.ngtest.NgTestClass2">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:org.ngtest.NgTestClass2@71423665]" name="test" duration-ms="0" started-at="2021-07-23T10:11:13Z" finished-at="2021-07-23T10:11:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- org.ngtest.NgTestClass2 -->
+    </test> <!-- ieTest -->
+  </suite> <!-- Suite -->
+</testng-results>

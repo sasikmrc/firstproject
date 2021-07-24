@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="lastName" value="C"/>
+  <parameter name="cvv" value="234"/>
+  <parameter name="address" value="Chennai"/>
+  <parameter name="cctype" value="VISA"/>
+  <parameter name="roomNo" value="2 - Two"/>
+  <parameter name="ccNum" value="7299012723654320"/>
+  <parameter name="userName" value="sasikumarc"/>
+  <parameter name="type" value="Double"/>
+  <parameter name="firstName" value="SASIKUMAR"/>
+  <parameter name="expMonth" value="March"/>
+  <parameter name="password" value="sqr403"/>
+  <parameter name="expYear" value="2022"/>
+  <parameter name="hotel" value="Hotel Sunshine"/>
+  <parameter name="location" value="Sydney"/>
+  <test name="Test(failed)">
+    <parameter name="lastName" value="C"/>
+    <parameter name="cvv" value="234"/>
+    <parameter name="address" value="Chennai"/>
+    <parameter name="cctype" value="VISA"/>
+    <parameter name="roomNo" value="2 - Two"/>
+    <parameter name="ccNum" value="7299012723654320"/>
+    <parameter name="userName" value="sasikumarc"/>
+    <parameter name="type" value="Double"/>
+    <parameter name="firstName" value="SASIKUMAR"/>
+    <parameter name="expMonth" value="March"/>
+    <parameter name="password" value="sqr403"/>
+    <parameter name="expYear" value="2022"/>
+    <parameter name="hotel" value="Hotel Sunshine"/>
+    <parameter name="location" value="Sydney"/>
+    <classes>
+      <class name="org.bookinfo.BookInfo">
+        <methods>
+          <include name="test6"/>
+        </methods>
+      </class> <!-- org.bookinfo.BookInfo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

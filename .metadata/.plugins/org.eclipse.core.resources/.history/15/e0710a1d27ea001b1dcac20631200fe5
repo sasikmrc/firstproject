@@ -1,0 +1,12 @@
+package org.ngtest;
+
+import org.testng.annotations.Test;
+
+public class NgTestClass2 {
+
+	@Test
+	public void test() {
+
+	}
+
+}

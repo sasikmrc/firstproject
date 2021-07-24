@@ -1,0 +1,5 @@
+package org.windows;
+
+public class WindowsHandle {
+
+}

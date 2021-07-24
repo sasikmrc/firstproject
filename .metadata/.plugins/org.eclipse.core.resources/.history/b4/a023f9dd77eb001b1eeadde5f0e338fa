@@ -1,0 +1,57 @@
+package org.pom;
+
+import org.libgobal.LibGlobalCommon;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class AddactinPomHotelSearch extends LibGlobalCommon {
+	
+	
+		
+	@FindBy(id="location")
+	private WebElement selectLocation;
+	
+	@FindBy(id="hotels")
+	private WebElement selectHotel;
+	
+	@FindBy(id="room_type")
+	private WebElement selectRoomType;
+	
+	@FindBy(id="room_nos")
+	private WebElement selctRoomNo;
+	
+	@FindBy(id="Submit")
+	private WebElement btnSubmit;
+
+	public WebElement getSelctLocation() {
+		return selectLocation;
+	}
+
+	public WebElement getSelectHotel() {
+		return selectHotel;
+	}
+
+	public WebElement getSelectRoomType() {
+		return selectRoomType;
+	}
+
+	public WebElement getSelectRoomNo() {
+		return selctRoomNo;
+	}
+
+	public WebElement getBtnSubmit() {
+		return btnSubmit;
+	}
+	
+	
+public void searchHotel(String location, String hotel, String type, int roomNo ) {
+	dropDownVisibleText(getSelctLocation(), location);
+	dropDownVisibleText(getSelectHotel(), hotel);
+	dropDownVisibleText(getSelectRoomType(), type);
+	dropDownIndex(getSelectRoomNo(), roomNo);
+	click(btnSubmit);
+
+}
+
+	}
+

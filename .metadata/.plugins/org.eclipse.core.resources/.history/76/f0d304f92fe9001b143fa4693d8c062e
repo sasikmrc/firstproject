@@ -1,0 +1,30 @@
+package org.windows;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WindowsHandle {
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sasik\\eclipse-workspace\\WindowsHandling\\chrome driver\\chromedriver.exe");
+	WebDriver driver =new ChromeDriver();
+	driver.get("https://www.amazon.in/");
+	WebElement txtSearch= driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
+	txtSearch.sendKeys("iwatch Series 6");
+	txtSearch.click();
+	Thread.sleep(4000);
+	
+	WebElement searchClick= driver.findElement(By.xpath("//input[@id='nav-search-submit-button']"));
+	searchClick.click();
+	
+	WebElement iWatch= driver.findElement(By.xpath("(//span[contains(text(),'New Apple Watch Series 6 (GPS + Cellular, 44mm) - Space Grey Aluminium Case with Black Sport Band')])[2]"));
+	iWatch.click();
+	String parentid = driver.getWindowHandle();
+	System.out.println(parentid);
+		
+	}
+	
+	
+
+}
